@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-7 martop">@ViewBag.CodigoAleatorio</h1>
+    <h2>@ViewBag.CodigoGenerado</h2>
+
+    <form method="post" asp-action="GenerateCode">
+        <button>Generate</button>
+    </form>
+</div>
